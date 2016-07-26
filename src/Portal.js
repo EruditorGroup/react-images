@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 const FirstChild = ({ children }) => {
 	let kids = Children.toArray(children);
-	return kids[0] || null;
+	return kids[0] || React.createElement('div',null);
 };
 
 export default class Portal extends Component {
